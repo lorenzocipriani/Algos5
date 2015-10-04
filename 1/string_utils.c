@@ -104,9 +104,5 @@ int count_substring(char str[])
 	
 		one_counter=count_one(str);
 	
-		for(i=0; i<one_counter; i++)
-			substring_counter += one_counter-i;
-				
-		
-		return substring_counter;
+		return (one_counter+((one_counter*one_counter-1)/2));
 }
